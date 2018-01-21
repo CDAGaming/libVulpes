@@ -13,7 +13,7 @@ import net.minecraft.world.IBlockAccess;
 
 public class OreProductColorizer   implements IItemColor, IBlockColor  {
 	@Override
-	public int getColorFromItemstack(ItemStack stack, int tintIndex) {
+	public int colorMultiplier(ItemStack stack, int tintIndex) {
 		if(stack.getItem() instanceof ItemOreProduct)
 			return ((ItemOreProduct)stack.getItem()).properties.get(stack.getMetadata()).getColor();
 		else 

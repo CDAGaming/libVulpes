@@ -25,7 +25,7 @@ public class BlockMaterial extends BlockMultiblockStructure {
 
 	public BlockMaterial(net.minecraft.block.material.Material mat) {
 		super(mat);
-		this.isBlockContainer = true;
+		this.hasTileEntity = true;
 	}
 
 	@Override

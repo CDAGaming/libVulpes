@@ -35,7 +35,7 @@ public class BlockHatch extends BlockMultiblockStructure {
 
 	public BlockHatch(Material material) {
 		super(material);
-		isBlockContainer = true;
+		hasTileEntity = true;
 		this.setDefaultState(this.blockState.getBaseState().withProperty(VARIANT,0));
 	}
 

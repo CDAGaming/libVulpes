@@ -1,8 +1,10 @@
 build/
+.idea/
 .gradle/
 libVulpes.txt
 output/
 /asm
+/run
 /blueprints
 /build
 /config

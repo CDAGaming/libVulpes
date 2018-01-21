@@ -26,7 +26,7 @@ public class RotatableMachineBlock extends RotatableBlock {
 
 	public RotatableMachineBlock(Material par2Material) {
 		super(par2Material);
-		this.isBlockContainer = true;
+		this.hasTileEntity = true;
 	}
 	
 	public int getMetaFromState(IBlockState state) {
