@@ -1,5 +1,3 @@
-import se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask
-
 buildscript {
     repositories {
         mavenCentral()
@@ -144,9 +142,9 @@ curseforge{
    }
 }
 
-task makeChangelog(type: GitChangelogTask) {
+task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
     file = new File ("changelog.html")
-    untaggedName = "Current release ${project.version}"
+    untaggedName = "Current Release ${project.version}"
     fromCommit = startGitRev
     toRef =  "HEAD"
     gitHubIssuePattern = "nonada123"
