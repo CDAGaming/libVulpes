@@ -28,9 +28,9 @@ apply from: "gradle/scripts/getbuildnumber.gradle"
 sourceCompatibility = 8
 targetCompatibility = 8
 minecraft {
-    version = "1.12.2-14.23.1.2602"
+    version = "1.12.2-14.23.1.2604"
     runDir = "run"
-    mappings = "snapshot_20180122"
+    mappings = "snapshot_20180124"
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
     replace "@MAJOR@", version_major
